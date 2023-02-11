@@ -1,0 +1,31 @@
+* {
+  color: grey;
+}
+#idEl {
+  color: blue;
+}
+.this-class.that-class {
+  color: gold;
+}
+.this-class {
+  color: green;
+}
+p > span {
+  color: red;
+  font-weight: bold;
+}
+div {
+  color: purple;
+}
+[name='this-name'] {
+  color: crimson;
+}
+[disabled] {
+  background-color: lime;
+}
+p + p {
+  background-color: orangered;
+}
+a ~ a {
+  background-color: aquamarine;
+}

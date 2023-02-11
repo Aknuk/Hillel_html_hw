@@ -1,0 +1,36 @@
+@font-face {
+  font-family: tekoRegular;
+  src: url(fonts/Teko-Regular.ttf);
+}
+.container {
+  text-align: center;
+  padding: 10px;
+  width: 57%;
+  margin: 50px auto;
+  background: lightcyan;
+}
+.square-block {
+  display: inline-block;
+  background: rgb(247, 230, 217);
+  margin: 15px;
+  padding: 0px 5px 5px;
+  text-align: center;
+  font-family: tekoRegular;
+}
+.square-block img {
+  width: 150px;
+}
+.content {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+h2.content {
+  padding: 5px 0;
+  font-weight: 700;
+  font-size: xx-large;
+}
+p.content {
+  width: 230px;
+  text-align: justify;
+  font-size: large;
+}
