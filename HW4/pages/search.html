@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      legend {
+        background-color: gray;
+        color: white;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://fom.in.ua/echo" method="get">
+      <fieldset>
+        <legend>Car Search</legend>
+        <div>
+          <label for="bodyType">Body Type:</label>
+          <select name="bodyType" id="bodyType">
+            <option selected disabled value="">Empty</option>
+            <option value="low">Low</option>
+            <option value="bus">Bus</option>
+            <option value="micro">Micro</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="manufacturer">Manufacturer:</label>
+          <select name="manufacturer" id="manufacturer">
+            <option selected disabled value="">Empty</option>
+            <optgroup label="Swedish Cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="American Cars">
+              <option value="ford">Ford</option>
+              <option value="chevrolet">Chevrolet</option>
+            </optgroup>
+            <optgroup label="German Cars">
+              <option value="bmw">BMW</option>
+              <option value="AUDI">AUDI</option>
+            </optgroup>
+            <optgroup label="Jananese Cars">
+              <option value="toyota">Toyota</option>
+            </optgroup>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="brandCountry">Brand Country:</label>
+          <select name="brandCountry" id="brandCountry">
+            <option selected disabled value="">Empty</option>
+            <option value="ua">Ukraine</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ch">China</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="price">Price:</label>
+          <select name="price" id="price">
+            <option selected disabled value="">Empty</option>
+            <option value="ua">100'000 and more</option>
+            <option value="us">70'000 - 99'999</option>
+            <option value="uk">40'000 - 69'999</option>
+            <option value="uk">Below 39'999</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="yearMade">Year Made:</label>
+          <select name="yearMade" id="yearMade">
+            <option selected disabled value="">Empty</option>
+            <option value="currentYear">This Year</option>
+            <option value="2020x">2010-2020</option>
+            <option value="2010x">2000-2010</option>
+            <option value="2000x">1990-2000</option>
+            <option value="1990x">Below 1990</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="condition">Condition:</label>
+          <select name="condition" id="condition" multiple>
+            <option value="inLoan">In loan</option>
+            <option value="usedGood">Used Good Condition</option>
+            <option value="bigMiles">More than 100k miles</option>
+            <option value="inCustoms">In customs</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="fuelType">Fuel Type:</label>
+          <select name="fuelType" id="fuelType">
+            <option selected disabled value="">Empty</option>
+            <option value="disel">Disel</option>
+            <option value="pertol">Pertol</option>
+            <option value="propane">Propane</option>
+            <option value="electric">Electric</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="transmissionType">Transmission Type:</label>
+          <select name="transmissionType" id="transmissionType">
+            <option selected disabled value="">Empty</option>
+            <option value="manual">Manual</option>
+            <option value="auto">Auto</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="color">Color:</label>
+          <select name="color" id="color">
+            <option selected disabled value="">Empty</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="class">Class:</label>
+          <select name="class" id="class">
+            <option selected disabled value="">Empty</option>
+            <option value="S">Luxurious</option>
+            <option value="D">Entry-level luxury</option>
+            <option value="A">Eco</option>
+          </select>
+        </div>
+        <br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
