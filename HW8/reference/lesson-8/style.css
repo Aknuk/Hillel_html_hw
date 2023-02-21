@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.about {
+  padding-top: 100px;
+}
+
+ul {
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: lightcoral;
+}
+
+.navigation {
+  float: right;
+}
+
+.list {
+  list-style: none;
+}
+
+.item {
+  display: inline-block;
+  position: relative;
+}
+
+.item.parent:hover .children-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item.parent:hover .children-menu.sub-childer-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.item.parent .children-menu li:hover .sub-childer-menu {
+  color: red;
+  opacity: 1;
+  visibility: visible;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  background: blue;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.item .children-menu {
+  opacity: 0;
+  visibility: hidden;
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.item .children-menu li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.item .children-menu li a {
+  display: block;
+  width: 100%;
+}
+
+.children-menu.sub-childer-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding-left: 10px;
+}
