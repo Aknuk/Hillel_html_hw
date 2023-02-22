@@ -5,21 +5,18 @@
   position: fixed;
   background-color: aqua;
   width: 100%;
-  padding: 15px;
 }
 .navigation {
   float: right;
 }
 .menu-item {
   display: inline-block;
-  margin: 10px;
+  padding: 10px;
 }
 .product,
 .sub-item {
-  margin: 10px;
-  padding: 2px;
+  padding: 10px;
   background-color: whitesmoke;
-  border-radius: 6px;
 }
 .link {
   text-decoration: none;
@@ -31,8 +28,9 @@
   background-color: aqua;
 }
 .product-list {
+  top: 100%;
   position: absolute;
-  visibility: none;
+  visibility: hidden;
   opacity: 0;
   background-color: aqua;
 }
@@ -42,7 +40,7 @@
   transition: opacity 0.3s ease;
 }
 .menu-item:hover .sub-item-list {
-  visibility: none;
+  visibility: hidden;
   opacity: 0;
 }
 .product:hover .sub-item-list {
