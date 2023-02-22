@@ -15,8 +15,14 @@
 }
 .product,
 .sub-item {
+  position: relative;
   padding: 10px;
   background-color: whitesmoke;
+}
+.sub-item {
+  position: relative;
+  top: -26px;
+  width: max-content;
 }
 .link {
   text-decoration: none;
@@ -25,14 +31,12 @@
   width: 100%;
   left: 100%;
   position: absolute;
-  background-color: aqua;
 }
 .product-list {
   top: 100%;
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  background-color: aqua;
 }
 .menu-item:hover .product-list {
   visibility: visible;
