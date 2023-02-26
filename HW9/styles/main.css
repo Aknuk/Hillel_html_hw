@@ -32,6 +32,7 @@ section {
   position: fixed;
   background-color: #eeeff1;
   width: 100%;
+  z-index: 2;
 }
 .upper-menu ul {
   margin: 0 auto;
@@ -172,7 +173,7 @@ section {
 .playBtn {
   position: absolute;
   transform: translate(-600%, 250%);
-  z-index: 2;
+  z-index: 1;
 }
 .footer {
   background-color: #34547a;
