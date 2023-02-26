@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto" !important;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+section {
+  width: 100%;
+  overflow: auto;
+}
+.upper-menu {
+  background-color: #eeeff1;
+}
+.upper-menu header {
+  position: fixed;
+  background-color: #eeeff1;
+  width: 100%;
+}
+.upper-menu ul {
+  margin: 0 auto;
+  width: 1110px;
+}
+.upper-menu .container {
+  padding: 0 5px;
+}
+.upper-menu li {
+  display: inline-block;
+  padding-right: 42px;
+  margin-top: 79px;
+}
+.upper-menu li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+.upper-menu li a::before {
+  /* Це щоб літери не скакали коли на них наводиш, знайшов рішення на Stack Overflow */
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.upper-menu h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 79px;
+  color: #000000;
+  margin-top: 151px;
+}
+.upper-menu p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-top: 60px;
+  margin-bottom: 65px;
+  width: 540px;
+}
+.upper-menu a span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.upper-menu .container > a {
+  display: inline-block;
+  align-items: center;
+  background: #34547a;
+  padding: 20px 40px;
+  margin-bottom: 141px;
+}
+.upper-menu li a:hover {
+  font-style: normal;
+  color: #34547a;
+  font-weight: 500;
+}
+.upper-menu li:last-child {
+  padding-right: 0;
+}
+.about-me h2,
+.how-do-i-work h2 {
+  margin-top: 112px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+.about-me p,
+.how-do-i-work p {
+  text-align: center;
+  margin: 0 auto;
+  width: 540px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 100px;
+}
+.projects {
+  background-color: #34547a;
+}
+.projects ul {
+  text-align: center;
+}
+.projects ul li {
+  text-align: left;
+  margin: 100px 45px 100px 0;
+  width: 141px;
+  display: inline-block;
+}
+.projects ul li img {
+  margin-right: 20px;
+}
+.projects ul li img {
+  float: left;
+}
+.projects ul li:last-child {
+  margin-right: 0px;
+}
+.projects ul li span:last-child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.projects ul li span:nth-child(-n + 2) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.how-do-i-work,
+.hero {
+  background-color: #eeeff1;
+}
+.hero .container {
+  position: relative;
+}
+.videoPrev {
+  width: 1110px;
+  margin-bottom: 100px;
+}
+.playBtn {
+  position: absolute;
+  transform: translate(-600%, 250%);
+  z-index: 2;
+}
+.footer {
+  background-color: #34547a;
+}
+.footer h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.footer p {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+}
