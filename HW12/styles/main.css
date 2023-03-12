@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.navigation-menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  height: 50px;
+}
+
+.navigation-menu {
+  background-color: #EFEFEF;
+}
+.navigation-menu__list {
+  display: flex;
+}
+.navigation-menu__list__faq {
+  text-transform: uppercase;
+}
+.navigation-menu li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 30px;
+}
+.navigation-menu li:last-child {
+  margin-right: 0;
+}
+
+.company-info {
+  padding: 20px 0;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.company-info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-info .container .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.company-info__company-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: #F13C6E;
+  text-transform: uppercase;
+}
+.company-info__image {
+  margin-right: 20px;
+}
+.company-info__phone {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 40px;
+}
+.company-info__phone-btn {
+  text-align: center;
+  padding: 12px 26px;
+  width: 117px;
+  border: 2px solid #F13C6E;
+  border-radius: 40px;
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}/*# sourceMappingURL=main.css.map */

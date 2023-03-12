@@ -2,20 +2,32 @@
 <html lang="en">
   <head>
     <title>Beauty Site</title>
-    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/precss/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/precss/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
   </head>
   <body>
     <section class="navigation-menu">
       <div class="container">
-        <ul>
-          <li class="navigation-menu__delivery">delivery</li>
-          <li class="navigation-menu__payment">payment</li>
-          <li class="navigation-menu__reviews">reviews</li>
-          <li class="navigation-menu__faq">faq</li>
-          <li class="navigation-menu__contacts">contacts</li>
+        <ul class="navigation-menu__list">
+          <li class="navigation-menu__list__delivery">delivery</li>
+          <li class="navigation-menu__list__payment">payment</li>
+          <li class="navigation-menu__list__reviews">reviews</li>
+          <li class="navigation-menu__list__faq">faq</li>
+          <li class="navigation-menu__list__contacts">contacts</li>
         </ul>
+      </div>
+    </section>
+    <section class="company-info">
+      <div class="container">
+        <div class="wrapper">
+          <img class="company-info__image" src="images/logo.svg" alt="Logo" />
+          <h1 class="company-info__company-name">beauty</h1>
+        </div>
+        <div class="wrapper">
+          <p class="company-info__phone">1 (213) 123-45-67</p>
+          <a class="company-info__phone-btn" href="/">Call back</a>
+        </div>
       </div>
     </section>
   </body>

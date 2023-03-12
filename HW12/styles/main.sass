@@ -1,0 +1,68 @@
+@import "variables"
+@import "fonts"
+.container
+  width: 1110px
+  margin: 0 auto
+.navigation-menu .container
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: capitalize
+  height: 50px
+.navigation-menu
+  background-color: $gray-color
+  &__list
+    display: flex
+    &__faq
+      text-transform: uppercase
+  li
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+    margin-right: 30px
+  li:last-child
+    margin-right: 0
+.company-info
+  padding: 20px 0
+  border-bottom: 1px solid $gray-color
+.company-info .container
+  display: flex
+  align-items: center
+  justify-content: space-between
+.company-info .container .wrapper
+  display: flex
+  align-items: center
+.company-info
+  &__company-name
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 42px
+    letter-spacing: 0.1em
+    color: $accent-color
+    text-transform: uppercase
+  &__image
+    margin-right: 20px
+  &__phone
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    margin-right: 40px
+  &__phone-btn
+    text-align: center
+    padding: 12px 26px
+    width: 117px
+    border: 2px solid $accent-color
+    border-radius: 40px
+    color: black
+    text-decoration: none
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
