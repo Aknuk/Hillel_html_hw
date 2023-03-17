@@ -284,8 +284,6 @@ section {
   .mobile-checkbox:checked ~ .menu {
     display: block;
   }
-  .mobile-checkbox:checked {
-  }
   /* .mobile-checkbox:checked + .hamburger {
     background: wheat;
   }
