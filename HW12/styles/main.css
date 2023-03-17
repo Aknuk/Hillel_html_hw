@@ -349,8 +349,11 @@
   display: flex;
 }
 .bottom-menu__list__item {
-  width: 256px;
+  width: 254px;
   margin-right: 30px;
+}
+.bottom-menu__list__item:last-child {
+  margin-right: 0px;
 }
 .bottom-menu__list__item__name {
   padding-bottom: 30px;

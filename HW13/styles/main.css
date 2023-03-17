@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+section {
+  width: 100%;
+  overflow: auto;
+}
+.upper-menu {
+  background-color: #eeeff1;
+}
+.upper-menu header {
+  position: fixed;
+  background-color: #eeeff1;
+  width: 100%;
+  z-index: 2;
+}
+.upper-menu ul {
+  margin: 0 auto;
+  width: 1110px;
+}
+.upper-menu .container {
+  padding: 0 5px;
+}
+.upper-menu li {
+  display: inline-block;
+  padding-right: 42px;
+  margin-top: 79px;
+}
+.upper-menu li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+.upper-menu li a::before {
+  /* Це щоб літери не скакали коли на них наводиш, знайшов рішення на Stack Overflow */
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.upper-menu h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 79px;
+  color: #000000;
+  margin-top: 151px;
+}
+.upper-menu p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-top: 60px;
+  margin-bottom: 65px;
+  width: 540px;
+}
+.upper-menu a span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.upper-menu .container > a {
+  display: inline-block;
+  align-items: center;
+  background: #34547a;
+  padding: 20px 40px;
+  margin-bottom: 141px;
+}
+.upper-menu li a:hover {
+  font-style: normal;
+  color: #34547a;
+  font-weight: 500;
+}
+.upper-menu li:last-child {
+  padding-right: 0;
+}
+.menu-mobile {
+  display: none;
+}
+.menu {
+  background: white;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  text-align: center;
+}
+.menu p {
+  margin: 20px auto;
+}
+.menu p:first-child {
+  margin-top: 100px;
+}
+.about-me h2,
+.how-do-i-work h2 {
+  margin-top: 112px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+.about-me p,
+.how-do-i-work p {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 100px;
+}
+.projects {
+  background-color: #34547a;
+}
+.projects ul {
+  text-align: center;
+}
+.projects ul li {
+  text-align: left;
+  margin: 100px 45px 100px 0;
+  width: 141px;
+  display: inline-block;
+}
+.projects ul li img {
+  margin-right: 20px;
+  float: left;
+}
+.projects ul li:last-child {
+  margin-right: 0px;
+}
+.projects ul li span:last-child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.projects ul li span:nth-child(-n + 2) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.how-do-i-work,
+.hero {
+  background-color: #eeeff1;
+}
+.hero .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.videoPrev {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.playBtn {
+  position: absolute;
+  z-index: 1;
+  translate: 0 -50%;
+}
+.footer {
+  background-color: #34547a;
+}
+.footer h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.footer p {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+}
+@media (max-width: 1310px) {
+  .container {
+    width: 85%;
+  }
+  .projects .container {
+    display: flex;
+    justify-content: center;
+  }
+  .projects ul {
+    width: 570px;
+  }
+  .projects ul li {
+    margin: 100px 0;
+  }
+}
+@media (max-width: 1160px) {
+  .container {
+    width: 80%;
+  }
+
+  .upper-menu p {
+    font-size: 18px;
+    width: 70%;
+  }
+  .about-me h2,
+  .how-do-i-work h2 {
+    margin-top: 50px;
+    margin-bottom: 25x;
+    font-size: 27px;
+  }
+  .about-me p,
+  .how-do-i-work p {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 760px) {
+  header {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .upper-menu h1 {
+    margin-top: 80px;
+  }
+  .upper-menu .normal-nav {
+    display: none;
+  }
+  .menu-mobile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #eeeff1;
+  }
+  .menu-mobile input {
+    margin: 0;
+  }
+  .mobile-checkbox {
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .mobile-checkbox:checked ~ .menu {
+    display: block;
+  }
+  .mobile-checkbox:checked {
+  }
+  /* .mobile-checkbox:checked + .hamburger {
+    background: wheat;
+  }
+  .mobile-checkbox:checked + .hamburger span {
+    background-color: #34547a;
+  } */
+  .mobile-checkbox:checked + .hamburger::before {
+    transform: rotate(-45deg) scale(0.7, 1) translate(-50%);
+  }
+  .mobile-checkbox:checked + .hamburger::after {
+    transform: rotate(45deg) scale(0.7, 1) translate(-50%);
+  }
+  .hamburger {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background: transparent;
+    border: 0;
+  }
+  .hamburger span {
+    width: 100%;
+    height: 2px;
+    background: #34547a;
+    z-index: 10;
+  }
+
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #34547a;
+    left: 0;
+    position: absolute;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+  }
+
+  .hamburger::after {
+    bottom: 0;
+  }
+  .hamburger::before {
+    top: 0;
+  }
+}
+@media (max-width: 580px) {
+  .container {
+    width: 90%;
+  }
+
+  .upper-menu h1 {
+    line-height: 44px;
+    font-size: 40px;
+  }
+  .upper-menu p {
+    font-size: 18px;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .upper-menu .container > a {
+    padding: 10px 20px;
+    margin-bottom: 50px;
+  }
+  .upper-menu a span {
+    font-size: 14px;
+  }
+  .about-me h2,
+  .how-do-i-work h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 27px;
+  }
+  .about-me p,
+  .how-do-i-work p {
+    margin-bottom: 30px;
+  }
+  .playBtn {
+    width: 90px;
+  }
+}
