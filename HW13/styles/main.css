@@ -269,6 +269,7 @@ header {
     align-items: flex-start;
     justify-content: space-between;
     background: #eeeff1;
+    height: 100%;
   }
   .menu-mobile input {
     margin: 0;

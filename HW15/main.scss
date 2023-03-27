@@ -1,0 +1,72 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'base/reset';
+@import 'base/typography';
+@import 'abstracts/animations';
+@include animations;
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header{
+  &__link{
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+  }
+  &__menu{
+    position: fixed;
+    &__menu-item {
+      &:hover > &__main-list{
+        @include dis-invis;
+      }
+      &:hover &__main-list__item > a {
+        animation-name: toYellow;
+        animation-duration: 500ms;
+        animation-timing-function: ease;
+      }
+      &__main-list{ 
+        @include invis;
+        &__item{
+          &:first-child {
+            padding-top: 5px;
+          }
+          width: 100px;
+          &:hover &__list{
+            @include dis-invis;
+            animation-name: toRight;
+            animation-duration: 500ms;
+            animation-timing-function: ease;
+            position: absolute;
+          }
+          @include colored-box;
+          &__list{
+            translate: 83px -15px;
+            @include invis;
+            &__item{
+              width: 100px;
+              &:hover > &__sub-list{
+                @include dis-invis;
+                animation-name: fromCircule;
+                animation-duration: 500ms;
+                animation-timing-function: ease;
+                position: absolute;
+              }
+              @include colored-box;
+              &__sub-list{
+                translate: 45px -15px;
+                @include invis;
+                &__sub-item{
+                  width: 100px;
+                  @include colored-box;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

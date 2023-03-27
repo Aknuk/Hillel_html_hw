@@ -1,0 +1,26 @@
+@mixin animations {
+  @keyframes toYellow {
+  0% {background-color: pink;
+      opacity: 0}
+  50% {background-color: hsl(234, 95%, 75%);
+      opacity: 50%}
+  100% {background-color: aqua;
+      opacity: 1}
+}
+  @keyframes toRight {
+    from {
+    left: 100px;
+    opacity: 50%}
+    to {
+    left: 0px;
+    opacity: 1}
+  }
+  @keyframes fromCircule {
+    from {
+    width: 1000%;
+    background-color: aquamarine;
+    margin: 20px;}
+    to {
+    width: 100%;}
+  }
+}
