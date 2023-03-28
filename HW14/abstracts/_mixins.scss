@@ -1,0 +1,109 @@
+@mixin font-face($family, $src, $style, $weight) {
+  @font-face {
+    font-family: $family;
+    src: url($src);
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+@mixin text-header-footer {
+  /* Header / Footer */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 117px;
+  color: $color-header-footer;
+}
+@mixin text-hero {
+  /* Hero / Regular */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: $background-gradient-redtext;
+}
+@mixin text-h2 {
+  /* H2 / Regular */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: $color-main-regular;
+}
+@mixin text-h3 {
+  /* H3 / Regular */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: $color-main-regular;
+}
+@mixin text-h3-caps {
+  /* H3 / Caps */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-main-regular;
+  /* identical to box height */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@mixin text-h4 {
+  /* H4 / Regular */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-main-regular;
+}
+@mixin text-paragraph-regular {
+  /* Paragraph/Regular */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-black;
+}
+@mixin text-list {
+  /* List */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-black;
+}
+@mixin text-list-decoration-number {
+  /* List / Decoration */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: right;
+  color: $color-accent;
+}
+@mixin link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-activate-regular;
+}
+@mixin link-regular {
+  @include link;
+  color: $color-activate-regular;
+}
+@mixin link-regular {
+  @include link;
+  color: $color-accent;
+}
