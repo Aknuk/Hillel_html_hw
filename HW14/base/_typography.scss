@@ -1,4 +1,2 @@
-@include font-face("Roboto", "../fonts/Montserrat/static/Montserrat-Regular.ttf", "normal", 400);
-@include font-face("Roboto", "../fonts/Montserrat/static/Montserrat-Bold.ttf", "normal", 700);
-// @include font-face("Roboto", "..\fonts\Montserrat\static\Montserrat-Regular.ttf", "Regular", 400);
-// @include font-face("Roboto", "..\fonts\Montserrat\static\Montserrat-Regular.ttf", "Regular", 400);
+@include font-face("Montserrat", "../fonts/Montserrat/static/Montserrat-Regular.ttf", "normal", 400);
+@include font-face("Montserrat", "../fonts/Montserrat/static/Montserrat-Bold.ttf", "normal", 700);

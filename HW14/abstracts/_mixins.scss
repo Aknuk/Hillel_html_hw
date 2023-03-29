@@ -97,13 +97,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: $color-activate-regular;
 }
 @mixin link-regular {
   @include link;
   color: $color-activate-regular;
 }
-@mixin link-regular {
+@mixin link-hover {
   @include link;
   color: $color-accent;
 }
