@@ -1,2 +1,5 @@
-@include font-face("Montserrat", "../fonts/Montserrat/static/Montserrat-Regular.ttf", "normal", 400);
-@include font-face("Montserrat", "../fonts/Montserrat/static/Montserrat-Bold.ttf", "normal", 700);
+@include font-face("Montserrat", "../assets/fonts/Montserrat/static/Montserrat-Regular.ttf", "normal", 400);
+@include font-face("Montserrat", "../assets/fonts/Montserrat/static/Montserrat-Bold.ttf", "normal", 700);
+body {
+  font-family: "Montserrat";
+}

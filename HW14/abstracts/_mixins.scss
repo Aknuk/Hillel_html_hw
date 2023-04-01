@@ -22,7 +22,12 @@
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
+}
+@mixin text-hero-gradient {
+  @include text-hero;
   background: $background-gradient-redtext;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @mixin text-h2 {
   /* H2 / Regular */

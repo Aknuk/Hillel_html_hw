@@ -1,11 +1,12 @@
-@import "../abstracts/animations";
+@import "../base/reset";
+
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
-@import "../base/reset";
+@import "../abstracts/animations";
+
+@import "../layout/container";
+@import "../layout/headerDark";
+
 @import "../base/typography";
 @import "../pages/contact";
-@import "../pages/services";
-
-p {
-  @include text-header-footer;
-}
+@import "../pages/homepage";

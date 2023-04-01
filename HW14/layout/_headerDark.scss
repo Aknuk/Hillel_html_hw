@@ -1,0 +1,111 @@
+.header {
+  top: 50px;
+  position: absolute;
+  width: 100%;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    &__logo {
+    }
+    &__wrapper {
+      &__info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        & > * {
+          &::after {
+            display: block;
+            content: "";
+            width: 6px;
+            height: 6px;
+            margin: 0 6px;
+            background-color: $color-white;
+            border-radius: 50%;
+          }
+          display: flex;
+          align-items: center;
+          &:last-child {
+            margin-right: 0;
+            &::after {
+              display: none;
+              content: "";
+            }
+          }
+        }
+        &__languages {
+          &__list {
+            display: flex;
+            &__item {
+              padding: 5px 8px;
+              &:hover {
+                background-color: $color-accent;
+                border-radius: 8px;
+              }
+              &__link {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                letter-spacing: 1px;
+                text-decoration: none;
+                color: $color-white;
+              }
+            }
+          }
+        }
+        &__address {
+          &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: $color-white;
+          }
+        }
+        &__phone {
+          &__text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: $color-white;
+          }
+        }
+        &__facebook-logo {
+          align-items: center;
+          width: 24px;
+          height: 24px;
+          &__image {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      &__navigation {
+        margin-top: 18px;
+        &__menu {
+          display: flex;
+          justify-content: flex-end;
+          &__item {
+            margin-right: 15px;
+            &:last-child {
+              margin-right: 0;
+            }
+            &__link {
+              text-decoration: none;
+              @include text-h4;
+              color: $color-white;
+              &:hover {
+                color: $color-accent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

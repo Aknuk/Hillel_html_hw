@@ -445,24 +445,252 @@ template {
   display: none;
 }
 
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  top: 50px;
+  position: absolute;
+  width: 100%;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.header__wrapper__wrapper__info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header__wrapper__wrapper__info > * {
+  display: flex;
+  align-items: center;
+}
+.header__wrapper__wrapper__info > *::after {
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin: 0 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.header__wrapper__wrapper__info > *:last-child {
+  margin-right: 0;
+}
+.header__wrapper__wrapper__info > *:last-child::after {
+  display: none;
+  content: "";
+}
+.header__wrapper__wrapper__info__languages__list {
+  display: flex;
+}
+.header__wrapper__wrapper__info__languages__list__item {
+  padding: 5px 8px;
+}
+.header__wrapper__wrapper__info__languages__list__item:hover {
+  background-color: #f0145a;
+  border-radius: 8px;
+}
+.header__wrapper__wrapper__info__languages__list__item__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__wrapper__wrapper__info__address__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #ffffff;
+}
+.header__wrapper__wrapper__info__phone__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #ffffff;
+}
+.header__wrapper__wrapper__info__facebook-logo {
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.header__wrapper__wrapper__info__facebook-logo__image {
+  width: 24px;
+  height: 24px;
+}
+.header__wrapper__wrapper__navigation {
+  margin-top: 18px;
+}
+.header__wrapper__wrapper__navigation__menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__wrapper__wrapper__navigation__menu__item {
+  margin-right: 15px;
+}
+.header__wrapper__wrapper__navigation__menu__item:last-child {
+  margin-right: 0;
+}
+.header__wrapper__wrapper__navigation__menu__item__link {
+  text-decoration: none;
+  /* H4 / Regular */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+  color: #ffffff;
+}
+.header__wrapper__wrapper__navigation__menu__item__link:hover {
+  color: #f0145a;
+}
+
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf");
+  src: url("../assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
   font-style: "normal";
   font-weight: 400;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+  src: url("../assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
   font-style: "normal";
   font-weight: 700;
 }
-p {
-  /* Header / Footer */
+body {
+  font-family: "Montserrat";
+}
+
+.hero {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+}
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px 60px 60px;
+}
+.hero__wrapper__quote {
+  background-image: url("../assets/images/bigH.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hero__wrapper__quote__text {
+  position: absolute;
+  top: 40%;
+}
+.hero__wrapper__quote__text__paragraph {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #ffffff;
+}
+.hero__wrapper__quote__scroll-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.hero__wrapper__quote__scroll-btn__icon {
+  width: 42px;
+  height: 42px;
+}
+.hero__wrapper__quote__scroll-btn__icon:hover {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(98%) saturate(5516%) hue-rotate(334deg) brightness(98%) contrast(91%);
+}
+.hero__wrapper__values {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.hero__wrapper__values__heading__list {
+  width: 375px;
+  padding-right: 60px;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+}
+.hero__wrapper__values__heading__list__item {
+  margin-top: 30px;
+  text-align: end;
+}
+.hero__wrapper__values__heading__list__item:first-child {
+  margin-top: 0;
+}
+.hero__wrapper__values__heading__list__item:first-child .hero__wrapper__values__heading__list__item__link {
+  /* Hero / Regular */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
-  line-height: 117px;
-  color: #4b28de;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero__wrapper__values__heading__list__item__link {
+  /* Hero / Regular */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #b3b3ba;
+  text-decoration: none;
+}
+.hero__wrapper__values__heading__list__item .hero__wrapper__values__heading__list__item__link:hover {
+  color: #f0145a;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+.hero__wrapper__values__info {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero__wrapper__values__info__title {
+  /* H2 / Regular */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #323264;
+  color: #ffffff;
+}
+.hero__wrapper__values__info__paragraph {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.hero__wrapper__services {
+  margin-top: 60px;
+}
+.hero__wrapper__services__pretext__link::after {
+  display: inline-block;
+  content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E%0A");
+  margin-left: 5.5px;
 }/*# sourceMappingURL=main.css.map */

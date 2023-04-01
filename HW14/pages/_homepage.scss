@@ -1,0 +1,122 @@
+.hero {
+  background: $background-gradient-supersoft;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px 60px 60px;
+    &__quote {
+      background-image: url("../assets/images/bigH.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      &__text {
+        position: absolute;
+        top: 40%;
+        &__paragraph {
+          font-weight: 700;
+          font-size: 38px;
+          line-height: 46px;
+          color: $color-white;
+        }
+      }
+      &__scroll-btn {
+        background: none;
+        border: none;
+        padding: 0;
+        width: 42px;
+        height: 42px;
+        margin-bottom: 30px;
+        cursor: pointer;
+
+        &__icon {
+          width: 42px;
+          height: 42px;
+          &:hover {
+            filter: brightness(0) saturate(100%) invert(16%) sepia(98%) saturate(5516%) hue-rotate(334deg)
+              brightness(98%) contrast(91%);
+          }
+        }
+      }
+    }
+    &__values {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      &__heading {
+        &__list {
+          width: 375px;
+          padding-right: 60px;
+          border-right: 4px solid rgba(255, 255, 255, 0.3);
+          &__item {
+            margin-top: 30px;
+            &:first-child {
+              margin-top: 0;
+            }
+            &:first-child &__link {
+              @include text-hero-gradient;
+            }
+            text-align: end;
+            &__link {
+              @include text-hero;
+              color: $color-grey-text;
+              text-decoration: none;
+              .hero__wrapper__values__heading__list__item &:hover {
+                color: $color-accent;
+                background: none;
+                -webkit-background-clip: unset;
+                -webkit-text-fill-color: unset;
+              }
+            }
+          }
+        }
+      }
+      &__info {
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__title {
+          @include text-h2;
+          color: $color-white;
+        }
+        &__paragraph {
+          margin-top: 30px;
+          font-weight: 400;
+          font-size: 19px;
+          line-height: 30px;
+          color: $color-white;
+        }
+      }
+    }
+    &__services {
+      margin-top: 60px;
+      &__pretext {
+        &__link {
+          &::after {
+            display: inline-block;
+            content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E%0A");
+            margin-left: 5.5px;
+          }
+        }
+        &__text {
+        }
+      }
+      &__tabs {
+        &__list {
+          &__card {
+            &__icon {
+            }
+            &__title {
+            }
+            &__paragraph {
+            }
+          }
+        }
+      }
+    }
+  }
+}
