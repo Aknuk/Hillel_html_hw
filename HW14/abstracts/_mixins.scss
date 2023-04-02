@@ -77,6 +77,15 @@
   line-height: 26px;
   color: $color-black;
 }
+@mixin text-paragraph-small {
+  /* Paragraph / Small */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $color-black;
+}
 @mixin text-list {
   /* List */
   font-family: "Montserrat";
@@ -110,4 +119,41 @@
 @mixin link-hover {
   @include link;
   color: $color-accent;
+}
+@mixin mini-link {
+  text-decoration: none;
+  @include text-h3-caps;
+  color: $color-activate-regular;
+  &:hover {
+    color: $color-accent;
+    &::after {
+      display: inline-block;
+      content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E%0A");
+      margin-left: 5.5px;
+      filter: brightness(0) saturate(100%) invert(16%) sepia(98%) saturate(5516%) hue-rotate(334deg) brightness(98%)
+        contrast(91%);
+    }
+  }
+  &::after {
+    display: inline-block;
+    content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E%0A");
+    margin-left: 5.5px;
+  }
+}
+@mixin blue-circle {
+  background: $color-activate-regular;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+@mixin mini-dot-after {
+  &::after {
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+    background-color: $color-grey-text;
+    border-radius: 50%;
+  }
 }
