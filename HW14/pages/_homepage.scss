@@ -1,3 +1,4 @@
+@import "../layout/headerDark";
 .hero {
   background: $background-gradient-supersoft;
   position: relative;
@@ -302,68 +303,76 @@
     }
   }
 }
-.footer {
-  &__wrapper {
-    padding: 30px 60px;
-    &__address {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+@include media($breakpoint-d-hd) {
+}
+@include media($breakpoint-d-sd) {
+  .hero__wrapper__services__tabs__list {
+    justify-content: space-evenly;
+  }
+  .hero__wrapper__services__tabs__list__card {
+    width: 27%;
+  }
+  .brands {
+    &__wrapper {
+      margin-left: 0;
+      width: 100%;
       &__list {
-        &__item {
-          display: flex;
-          align-items: center;
-          &__text {
-            display: flex;
-            align-items: center;
-            @include link;
-            color: $color-main-regular;
-            @include mini-dot-after;
-          }
-          &__link {
-            text-decoration: none;
-            @include text-h3-caps;
-            color: $color-activate-regular;
-          }
-        }
-      }
-      &__legal {
-        @include link;
-        color: $color-grey-text;
-      }
-    }
-    &__contact-info {
-      margin-top: 20px;
-      &__list {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        &__item {
-          display: flex;
-          align-items: center;
-          @include mini-dot-after;
+        &__brand {
           &:last-child {
-            margin-right: 0;
-            &::after {
-              display: none;
-              content: "";
-            }
+            border-bottom-right-radius: 0;
           }
-          &__logo {
-            width: 38px;
-            height: 38px;
+          &:first-child {
+            border-top-left-radius: 0;
           }
-          &__phone {
-            @include text-h4;
-            text-decoration: none;
+          &:nth-child(4) {
+            border-top-right-radius: 0;
           }
-          &__email {
-            @include text-h4;
-            color: $color-activate-regular;
-            text-decoration: none;
+          &:nth-child(9) {
+            border-bottom-left-radius: 0;
           }
         }
       }
     }
   }
+}
+@include media($breakpoint-t-hd) {
+  .team__wrapper__image {
+    width: 400px;
+    height: 528px;
+  }
+}
+@include media($breakpoint-t-sd) {
+  .team__wrapper {
+    flex-direction: column;
+    &__image {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+    }
+  }
+  .brands__wrapper__list__brand {
+    width: 33%;
+  }
+  .hero__wrapper__values {
+    flex-direction: column;
+    &__info {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+  }
+  .hero__wrapper__values__heading__list {
+    display: flex;
+    border-right: none;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 30px;
+    overflow: auto;
+    white-space: nowrap;
+    padding-right: 30%;
+    &__item {
+      margin-top: 0;
+      margin-right: 30px;
+    }
+  }
+}
+@include media($breakpoint-m) {
 }

@@ -1,0 +1,147 @@
+@import "../layout/headerLight";
+.contact {
+  margin-top: 112px;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    &__address {
+      width: 40%;
+      margin-right: 60px;
+      &__text {
+        @include text-contact;
+        padding-bottom: 30px;
+        border-bottom: 4px solid $color-grey-separator;
+      }
+      &__send-meassage {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 4px solid $color-grey-separator;
+        &__email {
+          @include text-contact;
+        }
+        &__phone {
+          @include text-contact;
+          color: $color-activate-regular;
+        }
+      }
+      &__social {
+        width: fit-content;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+        &:hover {
+          filter: brightness(0) saturate(100%) invert(16%) sepia(98%) saturate(5516%) hue-rotate(334deg) brightness(98%)
+            contrast(91%);
+        }
+        &__logo {
+          width: 38px;
+          height: 38px;
+          margin-right: 10px;
+        }
+        &__text {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: $color-activate-regular;
+        }
+      }
+    }
+    &__form {
+      padding: 30px;
+      background: $color-grey-bg;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      &__title {
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $background-gradient-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &__input {
+        box-sizing: border-box;
+        background: $color-white;
+        border: 1px solid $color-white;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        height: 56px;
+        padding-left: 15px;
+        &::placeholder {
+          @include text-paragraph-regular;
+          color: $color-grey-text;
+        }
+        &:focus {
+          outline: none;
+          border: 1px solid $color-activate-regular;
+        }
+        &:nth-child(3) {
+          padding-top: 15px;
+          height: 130px;
+          resize: none;
+        }
+      }
+      &__label {
+        margin: 15px 0;
+        @include text-h3-caps;
+        color: $color-grey-text;
+      }
+      &__sendBtn {
+        border: none;
+        height: 56px;
+        margin: 15px 0;
+        background: $color-activate-regular;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-white;
+        &:hover {
+          background: $color-activate-hover;
+        }
+      }
+    }
+  }
+}
+@include media($breakpoint-d-hd) {
+}
+@include media($breakpoint-d-sd) {
+}
+@include media($breakpoint-t-hd) {
+}
+@include media($breakpoint-t-sd) {
+  .header__wrapper {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .header__wrapper__logo {
+    margin-top: 35px;
+  }
+  .header__wrapper__wrapper__navigation {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .contact {
+    margin-top: 185px;
+  }
+  .contact__wrapper {
+    flex-direction: column;
+    & > * {
+      width: 90%;
+    }
+    .contact__wrapper__form {
+      margin-top: 30px;
+    }
+  }
+}
+@include media($breakpoint-m) {
+}

@@ -1,0 +1,11 @@
+$breakpoint-d-hd: 1920px;
+$breakpoint-d-sd: 1440px;
+$breakpoint-t-hd: 1024px;
+$breakpoint-t-sd: 768px;
+$breakpoint-m: 375px;
+
+@mixin media($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

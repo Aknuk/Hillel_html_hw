@@ -8,7 +8,7 @@
     justify-content: space-between;
     padding: 0 60px;
     &__logo {
-      width: 130px;
+      width: 298px;
       height: 60px;
     }
     &__wrapper {
@@ -37,6 +37,9 @@
                 background-color: $color-accent;
                 border-radius: 8px;
               }
+              &:hover &__link {
+                color: $color-white;
+              }
               &__link {
                 font-style: normal;
                 font-weight: 700;
@@ -45,7 +48,7 @@
                 text-align: center;
                 letter-spacing: 1px;
                 text-decoration: none;
-                color: $color-white;
+                color: $color-grey-text;
               }
             }
           }
@@ -57,7 +60,7 @@
             font-size: 16px;
             line-height: 20px;
             text-align: right;
-            color: $color-white;
+            color: $color-grey-text;
           }
         }
         &__phone {
@@ -67,7 +70,7 @@
             font-size: 16px;
             line-height: 20px;
             text-align: right;
-            color: $color-white;
+            color: $color-grey-text;
           }
         }
         &__facebook-logo {
@@ -93,7 +96,7 @@
             &__link {
               text-decoration: none;
               @include text-h4;
-              color: $color-white;
+              color: $color-activate-regular;
               &:hover {
                 color: $color-accent;
                 padding-bottom: 3px;
