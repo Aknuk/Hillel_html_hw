@@ -342,6 +342,22 @@
   }
 }
 @include media($breakpoint-t-sd) {
+  .publications__wrapper {
+    padding: 0 20px 20px 20px;
+  }
+  .team__wrapper__promise__pretext__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .hero__wrapper {
+    padding: 0 20px 20px 20px;
+  }
+  .hero__wrapper__services__tabs__list {
+    justify-content: space-evenly;
+  }
+  .hero__wrapper__services__tabs__list__card {
+    width: 100%;
+  }
   .team__wrapper {
     flex-direction: column;
     &__image {
@@ -373,6 +389,18 @@
       margin-right: 30px;
     }
   }
+  .publications__wrapper__list {
+    flex-direction: column;
+    &__card {
+      width: 100%;
+    }
+  }
 }
 @include media($breakpoint-m) {
+  .brands__wrapper__list__brand {
+    width: 100%;
+  }
+  .publications__wrapper__list {
+    flex-direction: column;
+  }
 }

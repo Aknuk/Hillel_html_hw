@@ -561,6 +561,39 @@ template {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .footer__wrapper__contact-info__list__item__logo {
+    margin-top: 10px;
+  }
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer__wrapper__address {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__wrapper__address__legal {
+    margin-top: 30px;
+  }
+  .footer__wrapper__address__list__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__wrapper__address__list__item__text::after {
+    display: none;
+  }
+  .footer__wrapper__contact-info__list {
+    flex-direction: column;
+  }
+  .footer__wrapper__contact-info__list__item {
+    margin-top: 10px;
+  }
+  .footer__wrapper__contact-info__list__item::after {
+    display: none;
+  }
+}
 @font-face {
   font-family: "Montserrat";
   src: url("../assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
